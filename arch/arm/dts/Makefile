@@ -629,6 +629,8 @@ dtb-$(CONFIG_TARGET_OMAP3_BEAGLE) += \
 dtb-$(CONFIG_TARGET_OMAP3_IGEP00X0) += \
 	omap3-igep0020.dtb
 
+dtb-$(CONFIG_TARGET_PE2201) += phytium-pe2201.dtb
+
 dtb-$(CONFIG_TARGET_SAMA5D2_PTC_EK) += \
 	at91-sama5d2_ptc_ek.dtb
 

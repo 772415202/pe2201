@@ -1452,6 +1452,13 @@ config ARCH_ASPEED
 	select OF_CONTROL
 	imply CMD_DM
 
+config TARGET_PE2201
+    bool "Support Phytium PE2201 Platform"
+    select ARM64
+    help 
+      Support for pe2201 platform.
+      It has 2GB Sdram, uart and pcie.
+
 endchoice
 
 config TI_SECURE_DEVICE
@@ -1604,6 +1611,7 @@ source "board/hisilicon/hikey/Kconfig"
 source "board/hisilicon/poplar/Kconfig"
 source "board/isee/igep003x/Kconfig"
 source "board/phytec/pcm051/Kconfig"
+source "board/phytium/pe2201/Kconfig"
 source "board/silica/pengwyn/Kconfig"
 source "board/spear/spear300/Kconfig"
 source "board/spear/spear310/Kconfig"
